@@ -19,7 +19,7 @@ namespace FinalXmL.Controller
         [HttpGet]
         public ActionResult<IEnumerable<MunicipalityJson>> GetMunicipalityJson()
         {
-            List<MunicipalityJson> airportsOfRequiredCity = new List<MunicipalityJson>();
+            List<MunicipalityJson> municipalityrequired = new List<MunicipalityJson>();
             String jsonString = GetData("https://pkgstore.datahub.io/core/country-list/data_json/data/8c458f2d15d9f2119654b29ede6e45b8/data_json.json");
             CountryCode[] country = CountryCode.FromJson(jsonString);
 
@@ -34,12 +34,12 @@ namespace FinalXmL.Controller
                 mj.Geonameid = geonamedata.Geonameid;
                 mj.Name = geonamedata.Name;
                 mj.Subcountry = geonamedata.Subcountry;
-                airportsOfRequiredCity.Add(mj);
+                municipalityrequired.Add(mj);
 
             }
 
 
-            return airportsOfRequiredCity;
+            return municipalityrequired;
         }
         public string GetData(string endpoint)
         {

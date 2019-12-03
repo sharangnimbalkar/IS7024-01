@@ -3,70 +3,81 @@
 @{
     ViewData["Title"] = "GoogleMaps";
 }
+<div class="text-center">
 
-<h1>GoogleMaps</h1>
+    <h1><font color="gold" size="10"><strong>Google Maps</strong></font></h1>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link href='css/site.css' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" />
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#q").autocomplete({
-                source: "/AutoCompleteSearch",
-                minLength: 3
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/392036.jpg");
+            background-repeat: round;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link href='css/site.css' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#q").autocomplete({
+                    source: "/AutoCompleteSearch",
+                    minLength: 3
+                });
             });
-        });
-    </script>
-</head>
-<body>
-    <form action="http://maps.google.com/maps?" method="get">
-        <div class="form-group">
-            <label class="control-label" for="q"><strong></strong></label>
-            <input type="text" class="form-control" name="q" id="q" />
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Search" class="btn btn-warning" />
-        </div>
-    </form>
+        </script>
+    </head>
+    <body>
+        <form action="http://maps.google.com/maps?" method="get">
+            <div class="form-group">
+                <label class="control-label" for="q"><strong></strong></label>
+                <input type="text" class="form-control" name="q" id="q" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-warning" />
+            </div>
+        </form>
 
-    <!--Grid row-->
-    <div class="row">
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4">
+        <!--Grid row-->
+        <div class="row">
 
-            <!--Card-->
-            <div class="card card-cascade narrower">
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
 
-                <!--Card image-->
-                <div class="view view-cascade gradient-card-header peach-gradient">
-                    <h5 class="mb-0">Custom map</h5>
-                </div>
-                <!--/Card image-->
-                <!--Card content-->
-                <div class="card-body card-body-cascade text-center">
+                <!--Card-->
+                <div class="card card-cascade narrower">
 
-                    <!--Google map-->
-                    <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 300px">
-                        <iframe src="https://maps.google.com/maps?q=Madryt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                                style="border:0" allowfullscreen=allowfullscreen></iframe>
+                    <!--Card image-->
+                    <div class="view view-cascade gradient-card-header peach-gradient">
+                        <h5 class="mb-0">map</h5>
                     </div>
+                    <!--/Card image-->
+                    <!--Card content-->
+                    <div class="card-body card-body-cascade text-center">
 
+                        <!--Google map-->
+                        <div id="map-container-google-9" class="z-depth-1-half map-container-4" style="height: 200px">
+                            <iframe src="https://maps.google.com/maps?q=Madryt&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                    style="border:0" allowfullscreen=allowfullscreen></iframe>
+                        </div>
+
+
+                    </div>
+                    <!--/.Card content-->
 
                 </div>
-                <!--/.Card content-->
+                <!--/.Card-->
 
             </div>
-            <!--/.Card-->
+            <!--Grid column-->
 
         </div>
-        <!--Grid column-->
-
-    </div>
-    <!--Grid row-->
+        <!--Grid row-->
 
 
-</body>
+    </body>
+</div>
