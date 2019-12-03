@@ -14,12 +14,9 @@ namespace FinalXmL.Models
 
         public string Country { get; set; }
 
-
-
         public long Geonameid { get; set; }
 
         public string Subcountry { get; set; }
-
 
     }
 }

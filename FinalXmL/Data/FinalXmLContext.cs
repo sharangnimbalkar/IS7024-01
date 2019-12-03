@@ -9,7 +9,7 @@ namespace FinalXmL.Models
 {
     public class FinalXmLContext : DbContext
     {
-        public FinalXmLContext (DbContextOptions<FinalXmLContext> options)
+        public FinalXmLContext(DbContextOptions<FinalXmLContext> options)
             : base(options)
         {
         }

@@ -18,8 +18,8 @@ namespace FinalXmL.Models
         public string municipality { get; set; }
         [Display(Name = "Geocode")]
         public int geocode { get; set; }
-        
-        
+
+
 
     }
 }

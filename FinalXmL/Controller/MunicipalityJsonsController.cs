@@ -16,7 +16,7 @@ namespace FinalXmL.Controller
     [ApiController]
     public class MunicipalityJsonsController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("{id}")]
         public ActionResult<IEnumerable<MunicipalityJson>> GetMunicipalityJson()
         {
             List<MunicipalityJson> municipalityrequired = new List<MunicipalityJson>();

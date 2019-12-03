@@ -2,7 +2,7 @@
 @model FinalXmL.Pages.ChicagoCafesModel
 @{
     ViewData["Title"] = "ChicagoCafes";
-    var abcd = (Cafe.ChicagoCafe[])ViewData["allCafes"];
+    var ListofCafes = (Cafe.ChicagoCafe[])ViewData["allCafes"];
 }
 
 
@@ -30,13 +30,13 @@
         </thead>
         <tbody>
             @{
-                foreach (Cafe.ChicagoCafe cff in abcd)
+                foreach (Cafe.ChicagoCafe chicago in ListofCafes)
                 {
                 <tr>
-                    <td>@cff.LegalName</td>
-                    <td>@cff.Street</td>
-                    <td>@cff.ZipCode</td>
-                    <td>@cff.PermitNumber</td>
+                    <td>@chicago.LegalName</td>
+                    <td>@chicago.Street</td>
+                    <td>@chicago.ZipCode</td>
+                    <td>@chicago.PermitNumber</td>
                 </tr>
                 }
             }
