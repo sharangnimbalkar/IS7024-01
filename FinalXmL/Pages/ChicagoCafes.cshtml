@@ -1,0 +1,37 @@
+﻿@page
+@model FinalXmL.Pages.ChicagoCafesModel
+@{
+    ViewData["Title"] = "ChicagoCafes";
+    var abcd = (Cafe.ChicagoCafe[])ViewData["allCafes"];
+}
+
+<h1>ChicagoCafes</h1>
+
+<div class="text-center">
+    <h1 class="hdr-text">Chicago SideWalk Cafe Owners</h1>
+
+    <br />
+    <table class="bg-text">
+        <thead bgcolor="grey">
+            <tr>
+                <th>Cafe Name</th>
+                <th>Street Name</th>
+                <th>Zip Code</th>
+                <th>Permit Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (Cafe.ChicagoCafe cff in abcd)
+                {
+                    <tr>
+                        <td>@cff.LegalName</td>
+                        <td>@cff.Street</td>
+                        <td>@cff.ZipCode</td>
+                        <td>@cff.PermitNumber</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

@@ -41,7 +41,7 @@ namespace FinalXmL.Pages
                 String jsonString = GetData("https://pkgstore.datahub.io/core/country-list/data_json/data/8c458f2d15d9f2119654b29ede6e45b8/data_json.json");
                 CountryCode[] country = CountryCode.FromJson(jsonString);
 
-                String jsonString1 = webClient.DownloadString("https://pkgstore.datahub.io/core/world-cities/world-cities_json/data/5b3dd46ad10990bca47b04b4739a02ba/world-cities_json.json");
+                String jsonString1 = GetData("https://pkgstore.datahub.io/core/world-cities/world-cities_json/data/5b3dd46ad10990bca47b04b4739a02ba/world-cities_json.json");
                 Geonamedata[] geodata = Geonamedata.FromJson(jsonString1);
                 foreach (Geonamedata geonamedata in geodata)
                 {
