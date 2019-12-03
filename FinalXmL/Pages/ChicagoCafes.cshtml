@@ -5,10 +5,19 @@
     var abcd = (Cafe.ChicagoCafe[])ViewData["allCafes"];
 }
 
-<h1>ChicagoCafes</h1>
+<h1><font color="Gold" size="10"><strong>ChicagoCafes</strong></font></h1>
+
+<style>
+    body {
+        background-image: url("https://wallpaperaccess.com/full/392036.jpg");
+        background-repeat: round;
+        background-attachment: fixed;
+    }
+</style>
+
 
 <div class="text-center">
-    <h1 class="hdr-text">Chicago SideWalk Cafe Owners</h1>
+    <h1 class="hdr-text"><font color="Gold" size="10">Chicago SideWalk Cafe Owners</font></h1>
 
     <br />
     <table class="bg-text">
@@ -24,12 +33,12 @@
             @{
                 foreach (Cafe.ChicagoCafe cff in abcd)
                 {
-                    <tr>
-                        <td>@cff.LegalName</td>
-                        <td>@cff.Street</td>
-                        <td>@cff.ZipCode</td>
-                        <td>@cff.PermitNumber</td>
-                    </tr>
+                <tr>
+                    <td>@cff.LegalName</td>
+                    <td>@cff.Street</td>
+                    <td>@cff.ZipCode</td>
+                    <td>@cff.PermitNumber</td>
+                </tr>
                 }
             }
         </tbody>

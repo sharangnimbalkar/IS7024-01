@@ -1,35 +1,45 @@
 ﻿@page
 @model FinalXmL.Pages.SearchModel
 @{
-    ViewData["Title"] = "Search";
+    ViewData["Title"] = "Home page";
 
     List<MunicipalData.Geonamedata> geonamedata = (List<MunicipalData.Geonamedata>)ViewData["RequiredCountry"];
     CountryData.CountryCode countrydata = (CountryData.CountryCode)ViewData["Country"];
 
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/392036.jpg");
+            background-repeat: round;
+            background-attachment: fixed;
+        }
+    </style>
+    <div class="text-center">
+        <head>
+            <title>Country Dictionary</title>
+            <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
+        </head>
 
-    <head>
-        <title>Country Dictionary</title>
-        <link rel="stylesheet" href="~/css/StyleSheet.css" type="text/css" />
-    </head>
-    <h1>Enter Country</h1>
+        <h1><font color="gold" size="10"><strong>Enter the country of your choice</strong></font></h1>
 
-    <form action="" method="POST">
-        <div class="form-group">
-            <label class="control-label" for="search"><strong></strong></label>
-            <input type="text" class="form-control" name="search" id="search" />
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Search" class="btn btn-warning" />
-        </div>
-    </form>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label class="control-label" for="search"><strong></strong></label>
+                <input type="text" class="form-control" name="search" id="search" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-warning" />
+            </div>
+        </form>
+    </div>
 
     @if (Model.SearchCompleted)
 
     {
         <div class="text-center">
-            <h2 class="display-4">Municipality Dictionary</h2>
-            <h4>@countrydata.Code, @countrydata.Name</h4>
+            <h2 class="display-4"><font color="gold" size="10"><strong>Municipality Dictionary</strong></font></h2>
+            <h4><font color="white" size="10"><strong>@countrydata.Code, @countrydata.Name</strong></font></h4>
             <br />
+
             <div class="row">
                 <div class="col-2">
                     @if (geonamedata.Count() > 0)
@@ -43,11 +53,15 @@
                         foreach (var a in type_count)
                         {
                             <div class="w3-row-padding w3-margin-bottom">
-                                <div class="w3-quarter">
-                                    <div class="container w3-red w3-padding-16">
-                                        <h3>@a.Count</h3>
-                                        <div class="w3-clear"></div>
-                                        <h6>@a.Type</h6>
+                                <div class="table-light">
+                                    <div class="w3-quarter">
+
+                                        <div class="container w3-red w3-padding-16">
+                                            <h3>@a.Count</h3>
+                                            <div class="w3-clear"></div>
+                                            <h6>@a.Type</h6>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -58,8 +72,13 @@
                     <table class="table table-border table-striped table-hover auto-index">
                         @{
                             int count = 0;
+
                         }
-                        <thead class="thead-dark">
+                        <thead class="thead-light">
+
+
+
+
                             <tr>
                                 <th>S.No.</th>
                                 <th>Country</th>
@@ -68,7 +87,7 @@
                                 <th>State</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-light">
                             @if (geonamedata.Count > 0)
                             {
                                 @foreach (MunicipalData.Geonamedata qwerty in geonamedata)
@@ -93,6 +112,7 @@
                                     </td>
                                 </tr>
                             }
+
                         </tbody>
                     </table>
                 </div>

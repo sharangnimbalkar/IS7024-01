@@ -1,0 +1,49 @@
+﻿@page
+@model FinalXmL.Pages.NewMunicipality.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create a Municipality</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MunicipalityAdd.country" class="control-label"></label>
+                <input asp-for="MunicipalityAdd.country" class="form-control" />
+                <span asp-validation-for="MunicipalityAdd.country" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MunicipalityAdd.subcountry" class="control-label"></label>
+                <input asp-for="MunicipalityAdd.subcountry" class="form-control" />
+                <span asp-validation-for="MunicipalityAdd.subcountry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MunicipalityAdd.municipality" class="control-label"></label>
+                <input asp-for="MunicipalityAdd.municipality" class="form-control" />
+                <span asp-validation-for="MunicipalityAdd.municipality" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MunicipalityAdd.geocode" class="control-label"></label>
+                <input asp-for="MunicipalityAdd.geocode" class="form-control" />
+                <span asp-validation-for="MunicipalityAdd.geocode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

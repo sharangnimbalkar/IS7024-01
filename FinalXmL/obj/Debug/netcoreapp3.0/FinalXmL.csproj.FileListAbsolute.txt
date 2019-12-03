@@ -235,3 +235,5 @@ C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Debug\netcoreapp3.0\Final
 C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Debug\netcoreapp3.0\Razor\Pages\GoogleMaps.cshtml.g.cs
 C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Debug\netcoreapp3.0\Razor\Pages\Search.cshtml.g.cs
 C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Debug\netcoreapp3.0\Razor\Pages\ChicagoCafes.cshtml.g.cs
+C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Debug\netcoreapp3.0\Razor\Pages\NewMunicipality\Create.cshtml.g.cs
+C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Debug\netcoreapp3.0\Razor\Pages\NewMunicipality\Index.cshtml.g.cs
