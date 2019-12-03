@@ -127,3 +127,5 @@ C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Release\netcoreapp3.0\Fin
 C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Release\netcoreapp3.0\FinalXmL.csproj.CopyComplete
 C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Release\netcoreapp3.0\FinalXmL.dll
 C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Release\netcoreapp3.0\FinalXmL.pdb
+C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Release\netcoreapp3.0\Razor\Pages\NewMunicipality\Create.cshtml.g.cs
+C:\Users\Owner\Documents\GitHub\IS7024-01\FinalXmL\obj\Release\netcoreapp3.0\Razor\Pages\NewMunicipality\Index.cshtml.g.cs
