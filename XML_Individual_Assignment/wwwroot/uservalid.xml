@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="Shortcuts.xsl"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="uservalid.xsd">
+  <!-- All payload data belongs here -->
+  <user>
+    <firstname>Salil</firstname>
+    <lastname>Tari</lastname>
+    <bearcatid>M13472170</bearcatid>
+    <favoriteshortcut>Ctrl + Shift + O</favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Sharang</firstname>
+    <lastname>Nimbalkar</lastname>
+    <bearcatid>M13262376</bearcatid>
+    <favoriteshortcut>Ctrl + Y</favoriteshortcut>
+  </user>
+  <user>
+    <firstname>Indrasis</firstname>
+    <lastname>Banerjee</lastname>
+    <bearcatid>M13094392</bearcatid>
+    <favoriteshortcut>CTRL+C</favoriteshortcut>
+  </user>
+</users>
