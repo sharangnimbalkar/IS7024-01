@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Documents\\GitHub\\IS7024-01\\FinalXmL\\FinalXmL.csproj": {}
+    "C:\\Users\\Indrasis\\Documents\\GitHub\\IS702401\\IS7024-01\\FinalXmL\\FinalXmL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Documents\\GitHub\\IS7024-01\\FinalXmL\\FinalXmL.csproj": {
+    "C:\\Users\\Indrasis\\Documents\\GitHub\\IS702401\\IS7024-01\\FinalXmL\\FinalXmL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Documents\\GitHub\\IS7024-01\\FinalXmL\\FinalXmL.csproj",
+        "projectUniqueName": "C:\\Users\\Indrasis\\Documents\\GitHub\\IS702401\\IS7024-01\\FinalXmL\\FinalXmL.csproj",
         "projectName": "FinalXmL",
-        "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\IS7024-01\\FinalXmL\\FinalXmL.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Documents\\GitHub\\IS7024-01\\FinalXmL\\obj\\",
+        "projectPath": "C:\\Users\\Indrasis\\Documents\\GitHub\\IS702401\\IS7024-01\\FinalXmL\\FinalXmL.csproj",
+        "packagesPath": "C:\\Users\\Indrasis\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Indrasis\\Documents\\GitHub\\IS702401\\IS7024-01\\FinalXmL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Indrasis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
