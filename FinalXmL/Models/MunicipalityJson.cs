@@ -8,15 +8,15 @@ namespace FinalXmL.Models
     public class MunicipalityJson
     {
         public int ID { get; set; }
-        public string Code { get; set; }
+        public string Codes { get; set; }
 
-        public string Name { get; set; }
+        public string Names { get; set; }
 
-        public string Country { get; set; }
+        public string Countries { get; set; }
 
-        public long Geonameid { get; set; }
+        public long Geonameids { get; set; }
 
-        public string Subcountry { get; set; }
+        public string Subcountries { get; set; }
 
     }
 }
